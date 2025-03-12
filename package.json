@@ -1,0 +1,14 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "Grind Hard And Smart",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Ishaan Khullar",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
