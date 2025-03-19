@@ -4,6 +4,8 @@
   "description": "Grind Hard And Smart",
   "main": "App.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build":"parcel build index.html",
     "test": "jest"
   },
   "author": "Ishaan Khullar",
