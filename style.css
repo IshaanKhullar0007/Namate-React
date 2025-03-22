@@ -21,7 +21,7 @@
 
 .res-card{
     width:180px;
-    height: 370px;
+    height: 380px;
     border: 1px solid black;
     padding: 5px;
     margin: 5px;
@@ -41,4 +41,25 @@
 .res-card:hover{
     border: 2px solid black;
     cursor: pointer;
+}
+
+.search{
+    display: flex;
+}
+
+.searchButton{
+    margin: 15px 20px;
+    cursor: pointer;
+}
+
+.shimmer{
+    background-color: #f0f0f0;
+}
+
+.logInButton{
+    background-color: yellow;
+}
+
+.search-button{
+    margin-top: 15px;
 }

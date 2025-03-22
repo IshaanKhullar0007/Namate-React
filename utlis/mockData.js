@@ -1,21 +1,3 @@
-/**
- * Header
- * - Logo
- * - NavItems
- * Body
- * - Search
- * - Restuarent Container
- * - - Cards
- * Footer
- * - Copyright
- * - Links
- * - Address
- * - Contact
- */
-
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-
 const dataObj = [
     {
       "info": {
@@ -1808,58 +1790,6 @@ const dataObj = [
         "type": "WEBLINK"
       }
     }
-  ]
-const Header = ()=>{
-    return(
-        <div className = 'header'>
-            <div>
-                <img src="https://img.cdn4dd.com/cdn-cgi/image/fit=contain,width=1200,height=672,format=auto/https://doordash-static.s3.amazonaws.com/media/restaurant/cover/fadd90b1-39a6-4872-8a68-cb912ad663a0.png" height="50"></img>
-            </div>
-            <div className = 'nav-items'>
-                <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Cart</li>
-                </ul>
-            </div>
-        </div>
-    )
-}
-const RestuarentCard = (props)=>{
-    const {resData} = props;
-    const {name,cuisines,avgRating,costForTwo} = resData.info;
-    return(
-        <div className='res-card' style={{backgroundColor:"#f0f0f0",}}>
-            <img src = {"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+resData.info.cloudinaryImageId} className='res-logo' />
-            <h3>{name}</h3>
-            <h4>{cuisines.join(',')}</h4>
-            <h4>{avgRating} Stars</h4> 
-            <h4>{resData.info.sla.deliveryTime} Minutes</h4>
-            <h4>{costForTwo}</h4>
-        </div>
-    )
-}
-const Body = ()=>{
-    return(
-        <div className='body'>
-            <div className='search'>
-                Search
-            </div>
-            <div className='res-container'>
-                {dataObj.map(i=><RestuarentCard key={i.info.id} resData={i}/>)}
-            </div>
-        </div>
-    )
-}
-const App = ()=>{
-    return (
-        <div className = 'app'>
-            <Header/>
-            <Body/>
-        </div>
-    )
-}
+  ] 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<App/>);
+export default dataObj;
